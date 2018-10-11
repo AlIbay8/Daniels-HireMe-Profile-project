@@ -1,0 +1,76 @@
+<!DOCTYPE html> <html><head>
+        <title> Daniel's HireMe! Profile (project)</title>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Libre+Baskerville|Poppins" rel="stylesheet">
+    <style>h1 {
+    color: yellow;
+    background: blue;
+    font-family: Anton;
+}
+
+h2, h3 {
+    font-family: Poppins;
+}
+.gallery {
+    width: 250px;
+    height:250px;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+.gallery:before, .gallery:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    z-index: -1;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+    transition: transform .2s linear;
+}
+.gallery:before {
+    background: #9db7da;
+    transform: rotateZ(-5deg);
+}
+.gallery:after {
+    background: #244562;
+    transform: rotateZ(5deg);
+}
+.gallery:hover:before {
+    transform: rotateZ(-7deg);
+}
+.gallery:hover:after {
+    transform: rotateZ(7deg);
+}
+div {
+    left: 50px;
+}
+
+</style></head>
+    <body>
+        <h1><marquee>Daniel Chan</marquee></h1>
+        <div class="gallery">
+            <a href="http://warriorsworld.bayareaballllc1.netdna-cdn.com/wp-content/uploads/2010/06/GSWPrimaryWEBLtBckgrndsLOW.jpg" target="blank"><img src="http://warriorsworld.bayareaballllc1.netdna-cdn.com/wp-content/uploads/2010/06/GSWPrimaryWEBLtBckgrndsLOW.jpg" alt="warriors"></a>
+        </div>
+        <p>Daniel Chan is a 9th Grade student at Burton.</p>
+        <h2>About</h2>
+        <ul>
+            <li>Sees himself working in a tech company in the future.</li>
+            <li><h2>Likes</h2>
+            <ul>
+                <li>Likes to play basketball for fun.</li>
+                <li>Likes all the <a href="https://en.wikipedia.org/wiki/The_Avengers_(2012_film)" target="blank">Avengers</a> movies.</li>
+                <li>Favorite musician is <a href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA" target="blank">Bruno Mars</a>.</li>
+            </ul>
+            </li>
+        </ul> 
+    
+
+</body></html>
