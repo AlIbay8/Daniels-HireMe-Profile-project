@@ -1,0 +1,52 @@
+h1 {
+    color: yellow;
+    background: blue;
+    font-family: Anton;
+}
+
+h2, h3 {
+    font-family: Poppins;
+}
+.gallery {
+    width: 250px;
+    height:250px;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+.gallery:before, .gallery:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    z-index: -1;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+    transition: transform .2s linear;
+}
+.gallery:before {
+    background: #9db7da;
+    transform: rotateZ(-5deg);
+}
+.gallery:after {
+    background: #244562;
+    transform: rotateZ(5deg);
+}
+.gallery:hover:before {
+    transform: rotateZ(-7deg);
+}
+.gallery:hover:after {
+    transform: rotateZ(7deg);
+}
+div {
+    left: 50px;
+}
+
