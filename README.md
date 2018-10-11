@@ -1,1 +1,0 @@
-# Daniels-HireMe-Profile-project
